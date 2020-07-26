@@ -1,0 +1,115 @@
+/* import fonts from google*/
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&family=Titillium+Web&display=swap");
+
+html,
+body {
+  margin: 0;
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+}
+
+:root {
+  --primary-gradient: linear-gradient(to bottom, #ffffff, #adadaa);
+  --label-gradient: linear-gradient(to bottom, #536452 0%, #57dd52 40%);
+}
+
+.container {
+  background: #282c34;
+  background: url(../assets/Night_3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 89vh;
+  width: 92vw;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  margin: auto;
+  margin-top: 4rem;
+  text-align: center;
+}
+
+/*Navigation*/
+
+.navbar {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  margin-top: 1.5rem;
+  margin-left: 1.5rem;
+  font-family: "Rubik", sans-serif;
+}
+
+.nav-items {
+  text-align: right;
+}
+.navbar .navbar-list {
+  list-style-type: none;
+}
+
+.navbar-list .nav-link {
+  display: inline-block;
+  font-size: 1rem;
+  margin: 0.9rem;
+}
+
+.navbar-list .sign-in {
+  border: none;
+  padding: 0.4rem 1.5rem;
+  border-radius: 2rem;
+  background-color: #ee5;
+  margin-right: 3rem;
+}
+
+.light-switch {
+  width: 40px;
+  height: 7px;
+  background-color: rgb(192, 188, 188);
+  margin: 20px auto;
+  border-radius: 100px;
+  position: relative;
+}
+
+.light-switch label {
+  display: block;
+  width: 19px;
+  height: 19px;
+  background-color: #0f0c29;
+  background: var(--label-gradient);
+  border-radius: 50px;
+  position: absolute;
+  top: -6px;
+  left: -1px;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, alpha);
+  transition: all 0.5s ease;
+}
+
+.light-switch input[type="checkbox"] {
+  position: absolute;
+  left: -8px;
+  top: -6px;
+  width: 50px;
+  opacity: 0;
+}
+.light-switch input[type="checkbox"]:checked + label {
+  left: 25px;
+  background: tomato;
+}
+
+.imglayer {
+  position: absolute;
+  top: 50%;
+  left: 22%;
+}
+
+.imglayer img {
+  width: 59vw;
+}
+
+.container h4 {
+  font-size: 11rem;
+  margin: 0 0.4rem;
+  padding: 0 1rem;
+  margin-top: 1rem;
+  font-family: "Titillium Web", sans-serif;
+  background: var(--primary-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
